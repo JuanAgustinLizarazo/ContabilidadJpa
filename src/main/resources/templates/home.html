@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns: th="http://www.thymeleaf.org" class= "allpurple">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<link rel="stylesheet" th:href="@{/css/estilos.css}" href="../static/css/estilos.css">
+<title>Aplicación de contabilidad</title>
+	</head>
+<body class = "principal-container">
+	<header >
+		<nav class ="contenedor">
+		
+			<h1 class="title"  th:text = "${mensaje}"> Hola</h1>
+
+			<div class="container-enc">
+
+				<a class ="btn" href="#">Inicio</a>
+				<a class ="btn" href="#">Inicio</a>
+				<a class ="btn" href="#">Inicio</a>
+
+			</div>
+		
+		</nav>
+		
+	</header>
+	
+	<div class="second-container">
+		<main>
+
+			<h2 class="subtitle" th:text="${fecha}">Fecha</h2>
+
+		</main>
+
+		<aside>
+			<h2>Information</h2>
+		</aside>
+		
+	</div>
+
+	
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+	
+	
+</body>
+</html>
