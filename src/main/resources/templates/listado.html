@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html xmlns: th="http://www.thymeleaf.org" class= "allpurple">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" th:href="@{/css/estiloListado.css}" href="../static/css/estiloListado.css">
+<title>Listado</title>
+</head>
+
+<body>
+	<header>
+			<h1 class="title">Listado</h1>
+			<nav class="nav">
+				<a href="#" class="btn">Inicio</a>
+				<a href="#" class="btn">Nosotros</a>
+				<a href="#" class="btn">Contacto</a>
+			</nav>
+	</header>
+
+	<main class= "main-container">
+		<article class="article-container">
+			<h2 class="subtitile">Listado de empleos</h2>
+				<div class="list-container">
+					<ol class="order-container">
+						<li class="list-element" th:each="empleo : ${empleos}" th:text="${empleo}">H
+						
+						</li>
+					</ol>
+				</div>
+		</article>
+	</main>
+	<aside>
+	</aside>
+	<footer>
+	</footer>
+</body>
+</html>
